@@ -83,12 +83,12 @@ def answer_question(question, documents):
 #
 #
 # store_vectors_in_db(db_connection,embeddings, chunked_documents,filename)
-# question = "what is KDF chains in double ratchet algorithm?"
-# related_documents = retrieve_docs_from_db(db_connection, embeddings, question)
-# print(related_documents)
-# print("Answer")
-# answer = answer_question(question,related_documents)
-# print(answer)
+question = "double ratchet algorithm is used in smart id?"
+related_documents = retrieve_docs_from_db(db_connection, embeddings, question)
+print(related_documents)
+print("Answer")
+answer = answer_question(question,related_documents)
+print(answer)
 
 
 
